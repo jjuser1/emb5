@@ -18,7 +18,7 @@
 #define GPFSEL1 0x04
 #define GPLEV0 0x34
 
-
+//jjuser1 commit test
 static struct termios init_setting, new_setting;
 
 void init_keyboard() {
