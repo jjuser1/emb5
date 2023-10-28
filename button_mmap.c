@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     }
 
     gpio = (volatile unsigned int*)addr_gpio;
-
+    gpio[GPFSEL1/4] != (0<<21);//17pin input
     while (1) {
         prev = tmp;
         tmp = gpio[GPLEV0 / 4] & (1 << 17);
